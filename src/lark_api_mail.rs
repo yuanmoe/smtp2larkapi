@@ -298,7 +298,7 @@ fn parser(mail_data: MailData) -> Result<String, anyhow::Error> {
     let mut name = String::new();
     if let Some(from) = message.from() {
         if let Some(from) = from.first() {
-            name = from.name().unwrap_or("").to_string();
+            name = from.name().unwrap_or("YuanMoe").to_string();
         }
     }
     let mut cc = Vec::new();
